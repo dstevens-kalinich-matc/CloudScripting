@@ -1,0 +1,7 @@
+Instance ID: i-0330615fc4498e2bc
+Before wait for instance to run status: pending
+Instance after wait status: running
+Instance Public IP Address: 3.95.137.55
+Instance Tags: [{'Key': 'Name', 'Value': 'Derek'}]
+Instance waiting to terminate status: running
+Instance after terminating status: terminated
