@@ -1,0 +1,5 @@
+InstanceId,InstanceType,State,PublicIpAddress,MonitoringState,InstanceName
+i-03cc0a4c71e72bbc9,t2.micro,running,18.209.174.100,disabled,Derek
+i-072a93255d6e92c83,t2.micro,running,52.206.219.235,disabled,Derek
+i-0119236321a4d19ad,t2.micro,running,52.70.167.65,disabled,N/A
+i-00eb26b5907c33d02,t2.micro,running,3.87.121.247,disabled,Derek
