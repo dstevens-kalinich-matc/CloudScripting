@@ -1,0 +1,14 @@
+1. lambdaClient.create_function()
+
+2. Parameters:
+        -FunctionName
+        -Runtime
+        -Role
+        -Handler
+        -Code
+
+3.
+    a. Function code can be stored in an S3 bucket. To access it, use the Code parameter to specify the S3 bucket name(S3Bucket), 
+    the file path for the .zip file in the bucket(S3Key), and if versioning is enabled the version of the object in the bucket (S3ObjectVersion)
+
+    b. Upload the code via container using ImageUri in the Code parameter. This needs to be the URI of the container image residing  in ECR.
