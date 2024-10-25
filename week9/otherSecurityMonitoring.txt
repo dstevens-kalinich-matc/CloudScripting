@@ -1,0 +1,24 @@
+1.Check the age of IAM User Access Keys
+
+Client: boto3.client('iam')
+Function: list_access_keys()
+All elements in the AccessKeyMetaData List could be useful:
+
+    'AccessKeyMetadata': [
+        {
+            'UserName': 'string',
+            'AccessKeyId': 'string',
+            'Status': 'Active'|'Inactive',
+            'CreateDate': datetime(2015, 1, 1)
+            
+2. Check EC2 activity outside of business hours
+
+Client: boto3.client('ec2')
+Function: describe_instances()
+Reservations > Instances > State > Name
+
+3. Monitor failed traffic in flow logs
+
+Client: boto3.client('ec2')
+Fuction: describe_flow_logs(Filters=['Name':'deliver_log_status','Values':'FAILED'])
+In the FlowLogs list, I would be interested in elements like dst/src IP, and action.
