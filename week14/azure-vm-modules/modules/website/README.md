@@ -1,0 +1,1 @@
+This module will be used to create a website using Azure storage
