@@ -51,16 +51,10 @@ module "http_80_security_group" {
   # Attach the security group to the VPC created
   vpc_id  = module.vpc.vpc_id
 
-  # Define custom ingress rule
-  ingress_with_cidr_blocks = [
-    {
-      from_port = 80
-      to_port = 80
-      protocol = "tcp"
-      description = "Allow all HTTP traffic"
-      cidr_blocks = "0.0.0.0/0"
-    }
-  ]
+  # Define CIDR block for rule
+  ingress_cidr_blocks = ["0.0.0.0/0"]
+
+
   # Let the VPC finish creating before running module
   depends_on = [module.vpc]
 }
